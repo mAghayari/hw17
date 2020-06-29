@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9ec19971-a6ed-43a4-8a2c-2f79a8e035e1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1dzW4OkgOn0txDtxHbFuEtBHhTr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.18882681" />
+    <property name="project.structure.side.proportion" value="0.3647343" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="util" />
+      <recent name="model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Codebanoo\IdeaProjects\HW19_2\src\view" />
+      <recent name="C:\Users\Codebanoo\IdeaProjects\HW19_2\src\services" />
+      <recent name="C:\Users\Codebanoo\IdeaProjects\HW19_2\src\model" />
+      <recent name="C:\Users\Codebanoo\IdeaProjects\HW19_2\src" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9ec19971-a6ed-43a4-8a2c-2f79a8e035e1" name="Default Changelist" comment="" />
+      <created>1593428209111</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593428209111</updated>
+      <workItem from="1593428213002" duration="8156000" />
+      <workItem from="1593440867749" duration="248000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="574" y="106" key="#com.intellij.ide.util.MemberChooser" timestamp="1593434925794">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="106" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1593434925794" />
+    <state x="69" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1593438854275">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="69" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1593438854275" />
+    <state x="499" y="163" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593428913744">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="163" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1593428913744" />
+    <state x="473" y="158" key="FileChooserDialogImpl" timestamp="1593433589163">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="473" y="158" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1593433589163" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1593433595811">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1593433595811" />
+    <state x="477" y="48" key="refactoring.ChangeSignatureDialog" timestamp="1593429152634">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="477" y="48" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1593429152634" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/services/OperationLogServices.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
