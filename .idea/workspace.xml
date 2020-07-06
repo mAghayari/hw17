@@ -1,13 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9ec19971-a6ed-43a4-8a2c-2f79a8e035e1" name="Default Changelist" comment="" />
+    <list default="true" id="9ec19971-a6ed-43a4-8a2c-2f79a8e035e1" name="Default Changelist" comment="Remove PrintMessages Class">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/UserServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/OrderDtoView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/UserView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mockito_all_1_10_19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW17_2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HW17_2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/AdminDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/CustomerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/OrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Admin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/CustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CustomerDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/OperationLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/OperationLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/AdminServices.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/CustomerServices.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/OperationLogServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/OperationLogServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/OrderServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/OrderServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Utility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/AdminView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/CustomerView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/OperationLogView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/OrderItemView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/OrderView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/OrderView.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1dzW4OkgOn0txDtxHbFuEtBHhTr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -15,17 +58,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.18882681" />
     <property name="project.structure.side.proportion" value="0.3647343" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="util" />
-      <recent name="model" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Codebanoo\IdeaProjects\HW17_2\src\view" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Codebanoo\IdeaProjects\HW19_2\src\view" />
@@ -33,6 +77,33 @@
       <recent name="C:\Users\Codebanoo\IdeaProjects\HW19_2\src\model" />
       <recent name="C:\Users\Codebanoo\IdeaProjects\HW19_2\src" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="util" />
+      <recent name="model" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="view" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.Main" />
+      <module name="HW17_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -45,46 +116,132 @@
       <option name="presentableId" value="Default" />
       <updated>1593428209111</updated>
       <workItem from="1593428213002" duration="8156000" />
-      <workItem from="1593440867749" duration="248000" />
+      <workItem from="1593440867749" duration="14998000" />
+      <workItem from="1593499878949" duration="16313000" />
+      <workItem from="1593521679164" duration="5870000" />
+      <workItem from="1593627438945" duration="1202000" />
+      <workItem from="1593847487020" duration="4724000" />
+      <workItem from="1594044392577" duration="1955000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Remove Print Messages Class" />
+    <MESSAGE value="Remove PrintMessages Class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove PrintMessages Class" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="106" key="#com.intellij.ide.util.MemberChooser" timestamp="1593434925794">
+    <state x="574" y="106" key="#com.intellij.ide.util.MemberChooser" timestamp="1593497269047">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="106" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1593434925794" />
-    <state x="69" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1593438854275">
+    <state x="574" y="106" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1593497269047" />
+    <state x="69" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1593501475737">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="69" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1593438854275" />
-    <state x="499" y="163" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593428913744">
+    <state x="69" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1593501475737" />
+    <state x="499" y="163" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593505799430">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="163" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1593428913744" />
+    <state x="499" y="163" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1593505799430" />
+    <state x="406" y="10" key="CommitChangelistDialog2" timestamp="1594046500338">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="406" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1594046500338" />
     <state x="473" y="158" key="FileChooserDialogImpl" timestamp="1593433589163">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="473" y="158" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1593433589163" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1593433595811">
+    <state width="1493" height="282" key="GridCell.Tab.0.bottom" timestamp="1593885207146">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1593433595811" />
+    <state width="1493" height="282" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593885207146" />
+    <state width="1493" height="282" key="GridCell.Tab.0.center" timestamp="1593885207146">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="282" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593885207146" />
+    <state width="1493" height="282" key="GridCell.Tab.0.left" timestamp="1593885207145">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="282" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593885207145" />
+    <state width="1493" height="282" key="GridCell.Tab.0.right" timestamp="1593885207146">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="282" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593885207146" />
+    <state width="1493" height="347" key="GridCell.Tab.1.bottom" timestamp="1593628647335">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="347" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593628647335" />
+    <state width="1493" height="347" key="GridCell.Tab.1.center" timestamp="1593628647335">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="347" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1593628647335" />
+    <state width="1493" height="347" key="GridCell.Tab.1.left" timestamp="1593628647335">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="347" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1593628647335" />
+    <state width="1493" height="347" key="GridCell.Tab.1.right" timestamp="1593628647335">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="347" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1593628647335" />
+    <state x="592" y="350" key="ReplaceDuplicatesPrompt" timestamp="1593451585560">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="592" y="350" key="ReplaceDuplicatesPrompt/0.0.1536.824@0.0.1536.824" timestamp="1593451585560" />
+    <state x="335" y="0" key="SettingsEditor" timestamp="1593521752242">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="335" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1593521752242" />
+    <state x="477" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1593627438090">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="477" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1593627438090" />
+    <state x="499" y="176" width="538" height="481" key="extract.method.dialog" timestamp="1593501977610">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="176" width="538" height="481" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1593501977610" />
+    <state x="209" y="8" key="new project wizard" timestamp="1593885200108">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="8" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1593885200108" />
     <state x="477" y="48" key="refactoring.ChangeSignatureDialog" timestamp="1593429152634">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="477" y="48" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1593429152634" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1593513030765">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1593513030765" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/services/OperationLogServices.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/view/Main.java</url>
+          <line>107</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/view/Main.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/services/UserServices.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/services/UserServices.java</url>
+          <line>107</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/services/UserServices.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -82,7 +82,7 @@ public class Product implements Comparable<Product> {
                 "\n" + description;
     }
 
-    public String productStringForPrintOrder(){
+    public String productStringForOrder(){
         return "Product id: " + id +
                 "\nname: " + name +
                 "\nprice: " + price +

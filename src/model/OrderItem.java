@@ -8,7 +8,7 @@ public class OrderItem {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @ManyToOne
-    @JoinColumn(name="cartId", nullable=false)
+    @JoinColumn(name = "orderId", nullable = false)
     private Order order;
     @OneToOne
     private Product product;
@@ -48,9 +48,8 @@ public class OrderItem {
 
     @Override
     public String toString() {
-        return product.productStringForPrintOrder() +
+        return product.productStringForOrder() +
                 "\ncount:" + count +
                 "\n--------------------------\n";
     }
-
 }

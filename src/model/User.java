@@ -5,8 +5,8 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@Entity
-public class Customer {
+@Entity(name = "user")
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -18,6 +18,7 @@ public class Customer {
     private String userName;
     private String password;
     private int age;
+    private boolean isAdmin;
     @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     List<Order> orders = new ArrayList<>();
 
@@ -93,6 +94,14 @@ public class Customer {
         this.age = age;
     }
 
+    public boolean isAdmin() {
+        return isAdmin;
+    }
+
+    public void setAdmin(boolean admin) {
+        isAdmin = admin;
+    }
+
     public List<Order> getOrders() {
         return orders;
     }
@@ -103,18 +112,32 @@ public class Customer {
 
     @Override
     public String toString() {
-        String customerString = "Customer " + id +
+        String userInfo = "User " + id +
+                "\nfirstName: " + firstName +
+                "\nlastName: " + lastName +
+                "\nmobileNumber: " + mobileNumber +
+                "\nemail: " + email +
+                "\naddress: " + address +
+                "\nage: " + age;
+        if (!isAdmin) {
+            userInfo += "\nOrders: " + orders.toString() +
+                    "\n---------------------------------\n";
+        }
+        return userInfo;
+    }
+
+    public String getCustomerStringForReport() {
+        return "User " + id +
                 "\nfirstName: " + firstName +
                 "\nlastName: " + lastName +
                 "\nmobileNumber: " + mobileNumber +
                 "\nemail: " + email +
                 "\naddress: " + address +
                 "\nage: " + age +
-                "\ncarts:\n";
-        for (Order order : orders) {
-            customerString += order.toString();
-        }
-        customerString += "\n---------------------------------\n";
-        return customerString;
+                "\n--------------------------------\n";
+    }
+
+    public static int compare(User user1, User user2) {
+        return Integer.compare(user1.getAge(), user2.getAge());
     }
 }

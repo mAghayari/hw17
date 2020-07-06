@@ -1,21 +1,13 @@
 package services;
 
 import model.OperationLog;
-import util.Utility;
-
-import java.util.Date;
 
 public class OperationLogServices {
 
-    public OperationLog getOperationLog(String authority) {
+    public OperationLog getOperationLog(String authority, String operation) {
         OperationLog operationLog = new OperationLog();
-        OrderServices orderServices = new OrderServices();
-
-        Date startDate = Utility.minusAMonth();
-        Date endDate = Utility.addADay(new Date());
-
         operationLog.setAuthority(authority);
-
+        operationLog.setOperation(operation);
         return operationLog;
     }
 }

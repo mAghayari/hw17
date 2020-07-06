@@ -1,6 +1,6 @@
 package dao;
 
-import model.Customer;
+import model.User;
 import model.Order;
 import model.OrderDto;
 import org.hibernate.Session;
@@ -9,7 +9,6 @@ import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -24,12 +23,12 @@ public class OrderDao {
         session.close();
     }
 
-    public List<Order> getCustomerOrders(Customer customer) {
+    public List<Order> getCustomerOrders(User user) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         List<Order> orders;
         Query query = session.createQuery("From orders o Where o.customer.id = :customerId");
-        query.setParameter("customerId", customer.getId());
+        query.setParameter("customerId", user.getId());
         orders = query.list();
         transaction.commit();
         session.close();

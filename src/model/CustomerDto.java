@@ -85,7 +85,7 @@ public class CustomerDto {
 
     @Override
     public String toString() {
-        return "Customer " + id +
+        return "User " + id +
                 "\nfirstName: " + firstName +
                 "\nlastName: " + lastName +
                 "\nuserName: " + userName +

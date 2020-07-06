@@ -5,7 +5,7 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
-@Entity
+@Entity(name = "orders")
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -14,9 +14,9 @@ public class Order {
     List<OrderItem> orderItems = new ArrayList<>();
     @ManyToOne
     @JoinColumn(name = "customerId", nullable = false)
-    private Customer customer;
+    private User customer;
     private Address address;
-    private double totalCost;
+    private double totalCost = 0;
     private Timestamp orderDate;
 
     public int getId() {
@@ -27,12 +27,12 @@ public class Order {
         this.id = orderID;
     }
 
-    public Customer getCustomer() {
+    public User getCustomer() {
         return customer;
     }
 
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
+    public void setCustomer(User user) {
+        this.customer = user;
     }
 
     public Address getAddress() {
@@ -47,9 +47,9 @@ public class Order {
         return totalCost;
     }
 
-    public void setTotalCost(List<OrderItem> orderedItems) {
-        totalCost = 0;
-        orderedItems.forEach(orderItem -> totalCost += orderItem.getCount() * orderItem.getProduct().getPrice());
+    public void setTotalCost(double cost) {
+        totalCost += cost;
+        // orderedItems.forEach(orderItem -> totalCost += orderItem.getCount() * orderItem.getProduct().getPrice());
     }
 
     public List<OrderItem> getOrderItems() {
@@ -71,15 +71,14 @@ public class Order {
 
     @Override
     public String toString() {
-        String orderString ="order: "+ id +
+        String orderString = "order: " + id +
                 "\ntotalCost: " + totalCost +
                 "\norderDate: " + orderDate +
                 "\norderItems: ";
         for (OrderItem orderItem : orderItems) {
-            orderString += orderItem.getId()+" ";
+            orderString += orderItem.getId() + " ";
         }
         orderString += "\n*********************************\n";
         return orderString;
     }
-}
 }

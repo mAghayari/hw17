@@ -1,46 +1,59 @@
 package view;
 
 import dao.ProductDao;
-import model.Admin;
-import model.Order;
-import model.Customer;
-import model.Product;
+import model.*;
+import org.apache.log4j.Logger;
+import services.OperationLogServices;
 import services.OrderServices;
+import services.UserServices;
 
 import java.util.List;
 import java.util.Objects;
 
 public class Main {
-    public static void main(String[] args) {
-        OrderItemView orderItemView = new OrderItemView();
-        OrderServices orderServices = new OrderServices();
-        CustomerView customerView = new CustomerView();
-        AdminView adminView = new AdminView();
+    private static final Logger LOGGER = Logger.getLogger(Main.class);
 
+    public static void main(String[] args) {
+        OrderServices orderServices = new OrderServices();
+        OrderView orderView = new OrderView();
+        UserServices userServices = new UserServices();
+        UserView userView = new UserView();
         while (true) {
-            Customer customer;
+            User user;
             Order order = new Order();
-            Admin admin = new Admin();
             System.out.println("1)SignIn\n2)SignUp");
             int enterItem = GetUserInputs.getInBoundDigitalInput(2);
             if (enterItem == 1) {
-                System.out.println("1-Admin SignIn \n2-User SignIn");
+                OperationLog operationLog = null;
+                System.out.println("1-Admin SignIn \n2-Customer SignIn");
                 int signInItem = GetUserInputs.getInBoundDigitalInput(2);
                 if (signInItem == 1) {
-                    admin = adminView.adminSignIn();
+                    user = userServices.adminSignIn(userView.getSignInInfo());
+                    if (!Objects.equals(user.getUserName(), null)) {
+                        System.out.println("✔ Welcome " + user.getUserName() + "\n--------------------------");
+                        OperationLogServices operationLogServices = new OperationLogServices();
+                        operationLog =
+                                operationLogServices.getOperationLog("admin " + user.getUserName(), "signIn");
+                        LOGGER.info(operationLog.toString());
+                    } else
+                        System.out.println("❌ InCorrect UserName Or Password");
                 } else {
-                    customer = customerView.customerSignIn();
-                    order.setCustomer(customer);
+                    user = userServices.customerSignIn(userView.getSignInInfo());
+                    if (!Objects.equals(user, null)) {
+                        System.out.println("✔ Welcome " + user.getUserName() + "\n--------------------------");
+
+                        OperationLogServices operationLogServices = new OperationLogServices();
+                        operationLog =
+                                operationLogServices.getOperationLog("customer " + user.getUserName(), "signIn");
+                        LOGGER.info(operationLog.toString());
+                    } else
+                        System.out.println("❌ InCorrect UserName Or Password");
+                    order.setCustomer(user);
                 }
             } else {
-                System.out.println("1-Admin SignUp\n2-User SignUp");
-                int signUpItem = GetUserInputs.getInBoundDigitalInput(2);
-                if (signUpItem == 1) {
-                    admin = adminView.adminSignUp();
-                } else {
-                    customer = customerView.customerSignUp();
-                    order.setCustomer(customer);
-                }
+                System.out.println("Customer SignUp:");
+                user = userServices.customerSignUp(userView.getRegisterInfo());
+                order.setCustomer(user);
             }
             if (!Objects.equals(order.getCustomer(), null)) {
                 ProductDao productDao = new ProductDao();
@@ -48,7 +61,7 @@ public class Main {
                 mainMenu:
                 while (true) {
                     System.out.println("Main Menu:");
-                    System.out.println("1-Products category's List\n2-Delete Cart Items\n3-Print Cart\n4-Finalize Cart\n5-SignOut\n6-Exit\nChoose an item:");
+                    System.out.println("1-Products category's List\n2-Delete Order Items\n3-Print Order\n4-Finalize Order\n5-SignOut\n6-Exit\nChoose an item:");
                     int mainMenuItem = GetUserInputs.getInBoundDigitalInput(6);
                     subMenu:
                     while (true) {
@@ -59,13 +72,13 @@ public class Main {
                                 int categoryItem = GetUserInputs.getInBoundDigitalInput(4);
                                 switch (categoryItem) {
                                     case 1:
-                                        orderItemView.addProductToCart(order, productDao, products, "ELECTRONICS");
+                                        orderServices.addProductToOrder(order, productDao, products, "ELECTRONICS");
                                         break;
                                     case 2:
-                                        orderItemView.addProductToCart(order, productDao, products, "READINGS");
+                                        orderServices.addProductToOrder(order, productDao, products, "READINGS");
                                         break;
                                     case 3:
-                                        orderItemView.addProductToCart(order, productDao, products, "SHOES");
+                                        orderServices.addProductToOrder(order, productDao, products, "SHOES");
                                         break;
                                     case 4:
                                         break subMenu;
@@ -73,32 +86,34 @@ public class Main {
                                 break;
                             case 2:
                                 if (order.getOrderItems().isEmpty())
-                                    System.out.println("your Cart is empty\n");
-                                else {
-                                    OrderView orderView = new OrderView();
-                                    order = orderView.deleteOperation(order, products);
-                                }
+                                    System.out.println("Your Order is empty\n");
+                                else
+                                    order = orderServices.deleteOperation(order, products);
                                 break subMenu;
                             case 3:
-                                OrderView.printCart(orderServices, order);
+                                orderView.printOrder(order);
                                 break subMenu;
                             case 4:
                                 if (order.getOrderItems().isEmpty())
-                                    System.out.println("your Cart is empty\n");
-                                else {
-                                    OrderView orderView = new OrderView();
-                                    orderView.finalizeCart(order);
-                                }
+                                    System.out.println("Your Order is empty\n");
+                                else
+                                    orderServices.finalizeOrder(order);
                                 break subMenu;
                             case 5:
+                                if (!order.getOrderItems().isEmpty())
+                                    orderServices.cancelOrder(order);
+                                OperationLogServices operationLogServices = new OperationLogServices();
+                                OperationLog operationLog =
+                                        operationLogServices.getOperationLog("customer " + order.getCustomer().getUserName(), "signOut");
+                                LOGGER.info(operationLog.toString());
                                 break mainMenu;
                             case 6:
                                 System.exit(0);
                         }
                     }
                 }
-            } else if (!Objects.equals(admin.getAdminName(), null))
-                adminView.adminMenu();
+            } else if (!Objects.equals(user.getUserName(), null) && user.isAdmin())
+                userServices.adminOperations(user);
         }
     }
 }

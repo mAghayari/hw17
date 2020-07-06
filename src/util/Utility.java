@@ -1,8 +1,8 @@
 package util;
 
-import java.util.Calendar;
-import java.util.Date;
-import java.util.TimeZone;
+import model.User;
+
+import java.util.*;
 
 public class Utility {
 
@@ -20,10 +20,10 @@ public class Utility {
                 (calendar.get(Calendar.MONTH) + 1) + "/" + calendar.get(Calendar.YEAR);
     }
 
-    public static Date minusAMonth() {
+    public static Date minusMonths(int months) {
         Calendar cal = Calendar.getInstance();
         cal.setTimeZone(TimeZone.getTimeZone("GMT"));
-        cal.add(Calendar.MONTH, -1);
+        cal.add(Calendar.MONTH, -months);
         return cal.getTime();
     }
 
@@ -32,5 +32,10 @@ public class Utility {
         cal.setTimeZone(TimeZone.getTimeZone("GMT"));
         cal.add(Calendar.DAY_OF_MONTH, +1);
         return cal.getTime();
+    }
+
+    public static void sortingCustomers(List<User> users) {
+        Comparator<User> comparator = User::compare;
+        users.sort(comparator);
     }
 }
