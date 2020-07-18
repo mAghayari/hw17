@@ -24,7 +24,7 @@ public class UserDao {
     public User getCustomer(User user) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        Query query = session.createQuery("From User c Where c.userName = :userName And c.password= :password");
+        Query query = session.createQuery("From user c Where c.userName = :userName And c.password= :password");
         query.setParameter("userName", user.getUserName());
         query.setParameter("password", user.getPassword());
         user = (User) query.uniqueResult();
@@ -37,7 +37,7 @@ public class UserDao {
         List<User> users;
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        Query query = session.createQuery("From User");
+        Query query = session.createQuery("From user u where u.isAdmin = 0");
         users = query.list();
         transaction.commit();
         session.close();
@@ -56,10 +56,11 @@ public class UserDao {
         session.close();
         return user;
     }
+
     public User getAdmin(User admin) {
         try (Session session = sessionFactory.openSession()) {
             Transaction transaction = session.beginTransaction();
-            Query query = session.createQuery("From User admin Where " +
+            Query query = session.createQuery("From user admin Where " +
                     "admin.userName = :userName And " +
                     "admin.password= :password And " +
                     "admin.isAdmin = 1");

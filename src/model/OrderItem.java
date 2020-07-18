@@ -48,8 +48,7 @@ public class OrderItem {
 
     @Override
     public String toString() {
-        return product.productStringForOrder() +
-                "\ncount:" + count +
-                "\n--------------------------\n";
+        return "productId :" + product.getId() +
+                ", count:" + count;
     }
 }

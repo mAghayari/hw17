@@ -1,22 +1,20 @@
 package services;
 
-import dao.OrderDao;
 import dao.UserDao;
 import model.OperationLog;
-import model.OrderDto;
 import model.User;
+import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import util.Utility;
 import view.GetUserInputs;
-import view.OrderDtoView;
+import view.OperationLogView;
 import view.UserView;
 
-import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
 public class UserServices {
-    private static final Logger LOGGER = Logger.getLogger(UserServices.class);
+    private static Logger LOGGER;
     UserDao userDao = new UserDao();
 
     public User signUp(User user) {
@@ -26,7 +24,7 @@ public class UserServices {
     }
 
     public User findCustomer(User signedInUser) {
-        return userDao.findCustomerByUserName(signedInUser.getUserName());
+        return userDao.getCustomer(signedInUser);
     }
 
     public List<User> getCustomersList() {
@@ -54,14 +52,11 @@ public class UserServices {
     }
 
     public User customerSignUp(User customer) {
-        UserView userView = new UserView();
         if (!Objects.equals(customer, null)) {
             customer = signUp(customer);
+            LOGGER = LogManager.getLogger(customer.getUserName());
+            LOGGER.info("sign up");
             System.out.println("✔ Welcome " + customer.getUserName() + "\n--------------------------");
-            OperationLogServices operationLogServices = new OperationLogServices();
-            OperationLog operationLog =
-                    operationLogServices.getOperationLog("customer " + customer.getUserName(), "signUp");
-            LOGGER.info(operationLog.toString());
         }
         return customer;
     }
@@ -76,7 +71,7 @@ public class UserServices {
         return admin;
     }
 
-    public void adminOperations(User admin) {
+    public void adminOperations() {
         UserView userView = new UserView();
         adminMenu:
         while (true) {
@@ -87,25 +82,23 @@ public class UserServices {
                     userView.printCustomersReport(getCustomersList());
                     break;
                 case 2:
-                    OrderDtoView orderDtoView = new OrderDtoView();
                     System.out.println("Enter customer's userName:");
                     String userName = GetUserInputs.getUserNameString();
                     User desiredCustomer = userDao.findCustomerByUserName(userName);
                     if (Objects.nonNull(desiredCustomer)) {
                         System.out.println("How many month's report do you want?");
                         int months = GetUserInputs.getInteger();
-                        Date startDate = Utility.minusMonths(months);
-                        OrderDao orderDao = new OrderDao();
-                        List<OrderDto> orders = orderDao.findOrders(desiredCustomer.getId(), startDate, new Date());
-                        orderDtoView.printOrderDtos(orders);
+                        OperationLogView operationLogView = new OperationLogView();
+                        OperationLogServices operationLogServices = new OperationLogServices();
+                        List<OperationLog> operationLogs = operationLogServices.getOperationLogs(userName, months);
+                        if (operationLogs.isEmpty())
+                            System.out.println("❌ No operation found");
+                        else
+                            operationLogView.print(operationLogs);
                     } else
                         System.out.println("❌ UserName not found");
                     break;
                 case 3:
-                    OperationLogServices operationLogServices = new OperationLogServices();
-                    OperationLog operationLog =
-                            operationLogServices.getOperationLog("customer " + admin.getUserName(), "signOut");
-                    LOGGER.info(operationLog.toString());
                     break adminMenu;
                 case 4:
                     System.exit(0);

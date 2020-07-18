@@ -1,38 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9ec19971-a6ed-43a4-8a2c-2f79a8e035e1" name="Default Changelist" comment="Remove PrintMessages Class">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/UserServices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/OrderDtoView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/UserView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mockito_all_1_10_19.xml" beforeDir="false" />
+    <list default="true" id="9ec19971-a6ed-43a4-8a2c-2f79a8e035e1" name="Default Changelist" comment="bugs fixed">
+      <change afterPath="$PROJECT_DIR$/out/production/HW17_2/META-INF/HW17_2.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/HW17_2/config/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/HW17_2/dao/OrderDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/HW17_2/dao/ProductDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/HW17_2/dao/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/HW17_2/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/HW17_2/model/Address.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/HW17_2/model/CustomerDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/HW17_2/model/OrderDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/HW17_2/model/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/HW17_2/model/ProductCategory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/HW17_2/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/HW17_2/util/Utility.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/HW17_2/view/GetUserInputs.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/HW17_2/view/OrderDtoView.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/HW17_2/view/ProductView.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/OperationLogDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/OperationLogView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HW17_2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HW17_2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/AdminDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/CustomerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/OrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Admin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/CustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CustomerDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/OperationLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/OperationLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/OrderItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/AdminServices.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/CustomerServices.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/OperationLogServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/OperationLogServices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/OrderServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/OrderServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Utility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/AdminView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/CustomerView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/UserServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/UserServices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/OperationLogView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/OrderItemView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/OrderView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/OrderView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/UserView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/UserView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,13 +64,13 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.18882681" />
     <property name="project.structure.side.proportion" value="0.3647343" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Codebanoo\IdeaProjects\HW17_2\src\view" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="view" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Codebanoo\IdeaProjects\HW19_2\src\view" />
@@ -78,11 +79,12 @@
       <recent name="C:\Users\Codebanoo\IdeaProjects\HW19_2\src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="view" />
       <recent name="util" />
       <recent name="model" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="view" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Codebanoo\IdeaProjects\HW17_2\src\view" />
     </key>
   </component>
   <component name="RunManager">
@@ -121,8 +123,24 @@
       <workItem from="1593521679164" duration="5870000" />
       <workItem from="1593627438945" duration="1202000" />
       <workItem from="1593847487020" duration="4724000" />
-      <workItem from="1594044392577" duration="1955000" />
+      <workItem from="1594044392577" duration="5115000" />
+      <workItem from="1594052454277" duration="233000" />
+      <workItem from="1594055095127" duration="1829000" />
+      <workItem from="1594210468330" duration="2065000" />
+      <workItem from="1594730908279" duration="887000" />
+      <workItem from="1594736508173" duration="1021000" />
+      <workItem from="1594912700079" duration="405000" />
+      <workItem from="1594913555298" duration="1735000" />
+      <workItem from="1595054532257" duration="13699000" />
     </task>
+    <task id="LOCAL-00001" summary="Remove PrintMessages Class, add customer Orders report part">
+      <created>1594046524599</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1594046524599</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,73 +149,75 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Remove Print Messages Class" />
     <MESSAGE value="Remove PrintMessages Class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove PrintMessages Class" />
+    <MESSAGE value="Remove PrintMessages Class, add customer Orders report part" />
+    <MESSAGE value="bugs fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="bugs fixed" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="106" key="#com.intellij.ide.util.MemberChooser" timestamp="1593497269047">
+    <state x="574" y="106" key="#com.intellij.ide.util.MemberChooser" timestamp="1595055290659">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="106" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1593497269047" />
+    <state x="574" y="106" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1595055290659" />
     <state x="69" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1593501475737">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="69" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1593501475737" />
-    <state x="499" y="163" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593505799430">
+    <state x="499" y="163" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595058235868">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="163" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1593505799430" />
-    <state x="406" y="10" key="CommitChangelistDialog2" timestamp="1594046500338">
+    <state x="499" y="163" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1595058235868" />
+    <state x="406" y="10" key="CommitChangelistDialog2" timestamp="1595085590025">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="406" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1594046500338" />
+    <state x="406" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1595085590025" />
     <state x="473" y="158" key="FileChooserDialogImpl" timestamp="1593433589163">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="473" y="158" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1593433589163" />
-    <state width="1493" height="282" key="GridCell.Tab.0.bottom" timestamp="1593885207146">
+    <state width="1493" height="339" key="GridCell.Tab.0.bottom" timestamp="1595085590094">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="282" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593885207146" />
-    <state width="1493" height="282" key="GridCell.Tab.0.center" timestamp="1593885207146">
+    <state width="1493" height="339" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595085590094" />
+    <state width="1493" height="339" key="GridCell.Tab.0.center" timestamp="1595085590093">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="282" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593885207146" />
-    <state width="1493" height="282" key="GridCell.Tab.0.left" timestamp="1593885207145">
+    <state width="1493" height="339" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1595085590093" />
+    <state width="1493" height="339" key="GridCell.Tab.0.left" timestamp="1595085590093">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="282" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593885207145" />
-    <state width="1493" height="282" key="GridCell.Tab.0.right" timestamp="1593885207146">
+    <state width="1493" height="339" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1595085590093" />
+    <state width="1493" height="339" key="GridCell.Tab.0.right" timestamp="1595085590093">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="282" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593885207146" />
-    <state width="1493" height="347" key="GridCell.Tab.1.bottom" timestamp="1593628647335">
+    <state width="1493" height="339" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595085590093" />
+    <state width="1493" height="142" key="GridCell.Tab.1.bottom" timestamp="1595081403511">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="347" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593628647335" />
-    <state width="1493" height="347" key="GridCell.Tab.1.center" timestamp="1593628647335">
+    <state width="1493" height="142" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595081403511" />
+    <state width="1493" height="142" key="GridCell.Tab.1.center" timestamp="1595081403511">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="347" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1593628647335" />
-    <state width="1493" height="347" key="GridCell.Tab.1.left" timestamp="1593628647335">
+    <state width="1493" height="142" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1595081403511" />
+    <state width="1493" height="142" key="GridCell.Tab.1.left" timestamp="1595081403511">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="347" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1593628647335" />
-    <state width="1493" height="347" key="GridCell.Tab.1.right" timestamp="1593628647335">
+    <state width="1493" height="142" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1595081403511" />
+    <state width="1493" height="142" key="GridCell.Tab.1.right" timestamp="1595081403511">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="347" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1593628647335" />
+    <state width="1493" height="142" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1595081403511" />
     <state x="592" y="350" key="ReplaceDuplicatesPrompt" timestamp="1593451585560">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="592" y="350" key="ReplaceDuplicatesPrompt/0.0.1536.824@0.0.1536.824" timestamp="1593451585560" />
-    <state x="335" y="0" key="SettingsEditor" timestamp="1593521752242">
+    <state x="335" y="0" key="SettingsEditor" timestamp="1594211929502">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="335" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1593521752242" />
-    <state x="477" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1593627438090">
+    <state x="335" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1594211929502" />
+    <state x="477" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1594052691602">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="477" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1593627438090" />
+    <state x="477" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1594052691602" />
     <state x="499" y="176" width="538" height="481" key="extract.method.dialog" timestamp="1593501977610">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -210,38 +230,43 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="477" y="48" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1593429152634" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1593513030765">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1595085347860">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1593513030765" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1595085347860" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/view/Main.java</url>
-          <line>107</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/view/Main.java</url>
-          <line>106</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/services/UserServices.java</url>
-          <line>108</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/services/UserServices.java</url>
-          <line>107</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/services/UserServices.java</url>
-          <line>63</line>
+          <line>57</line>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/dao/OrderDao.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/dao/OrderDao.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/dao/OrderDao.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/dao/OrderDao.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/services/OrderServices.java</url>
+          <line>146</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -3,6 +3,7 @@ package services;
 import dao.OrderDao;
 import dao.ProductDao;
 import model.*;
+import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import view.*;
 
@@ -11,7 +12,7 @@ import java.util.Date;
 import java.util.List;
 
 public class OrderServices {
-    private static final Logger LOGGER = Logger.getLogger(OrderServices.class);
+    private static Logger LOGGER;
 
     public Order cancelOrder(Order order) {
         ProductServices productServices = new ProductServices();
@@ -123,7 +124,6 @@ public class OrderServices {
     }
 
     public void finalizeOrder(Order order) {
-        OperationLogServices operationLogServices = new OperationLogServices();
         GetUserInputs getUserInputs = new GetUserInputs();
 
         if (order.getOrderItems().isEmpty())
@@ -137,12 +137,16 @@ public class OrderServices {
                 order.setAddress(order.getCustomer().getAddress());
             else
                 order.setAddress(getUserInputs.getAddress());
+
             addingOrder(order);
-            order.setOrderItems(new ArrayList<>());
+
+            StringBuilder operation = new StringBuilder("order:");
+            for (OrderItem orderItem : order.getOrderItems())
+                operation.append('[').append(orderItem.toString()).append(']');
+            LOGGER = LogManager.getLogger(order.getCustomer().getUserName());
+            LOGGER.info(operation);
             System.out.println("✔ Thank you for your shopping");
-            OperationLog operationLog =
-                    operationLogServices.getOperationLog("customer " + order.getCustomer().getUserName(), "shop");
-            LOGGER.info(operationLog.toString());
+            order.setOrderItems(new ArrayList<>());
         }
     }
 }

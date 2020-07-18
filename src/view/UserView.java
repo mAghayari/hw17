@@ -11,7 +11,7 @@ public class UserView {
         GetUserInputs getUserInputs = new GetUserInputs();
         User user = new User();
 
-        System.out.println("Registering a new User:\nEnter First Name:");
+        System.out.println("Enter First Name:");
         user.setFirstName(GetUserInputs.getLetteringString());
 
         System.out.println("Enter last Name:");

@@ -42,11 +42,11 @@ public class OrderDao {
         java.sql.Date sqlStartDate = new java.sql.Date(startDate.getTime());
         java.sql.Date sqlEndDate = new java.sql.Date(endDate.getTime());
         List<OrderDto> orderDtoList;
-        Query query = session.createQuery("SELECT `orders`.orderDate , `orders`.orderItems FROM `orders` " +
-                "WHERE customerID = ? AND orderDate BETWEEN ? AND ?");
-        query.setParameter(1, customerId);
-        query.setParameter(2, sqlStartDate);
-        query.setParameter(3, sqlEndDate);
+        Query query = session.createQuery("SELECT o.orderDate , o.orderItems FROM orders o " +
+                "WHERE o.customer.id = :customerId AND o.orderDate>= ?1 AND o.orderDate<= ?2");
+        query.setParameter("customerId", customerId);
+        query.setParameter(1, sqlStartDate);
+        query.setParameter(2, sqlEndDate);
 
         orderDtoList = query.list();
         transaction.commit();
